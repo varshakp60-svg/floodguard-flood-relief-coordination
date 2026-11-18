@@ -1,15 +1,9 @@
-&#x20;\<p align="center">
-&#x20; \<img src="screenshots/floodguard-banner.png" alt="FloodGuard Banner" width="100%">
-\</p>
+![FloodGuard Banner](./screenshots/floodguard-banner.png)
 
-\<h1 align="center">🌊 FloodGuard\</h1>
+# 🌊 FloodGuard
+### Flood Alert & Relief Coordination System
 
-\<h3 align="center">Flood Alert & Relief Coordination System\</h3>
-
-\<p align="center">   A web-based platform designed to support flood emergency reporting, alert management and coordination between administrators, citizens and volunteers. \</p>
-
-\<p align="center">   \<img src="[https://img.shields.io/badge/Frontend-React-blue?logo=react](https://img.shields.io/badge/Frontend-React-blue?logo=react)" alt="React">   \<img src="[https://img.shields.io/badge/Backend-Node.js-green?logo=node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)" alt="Node.js">   \<img src="[https://img.shields.io/badge/Framework-Express-black?logo=express](https://img.shields.io/badge/Framework-Express-black?logo=express)" alt="Express">   \<img src="[https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)" alt="MongoDB">   \<img src="[https://img.shields.io/badge/Maps-Leaflet-brightgreen](https://img.shields.io/badge/Maps-Leaflet-brightgreen)" alt="Leaflet">   \<img src="[https://img.shields.io/badge/Status-Academic%20Project-orange](https://img.shields.io/badge/Status-Academic%20Project-orange)" alt="Project status"> \</p>
-
+A web-based platform for flood emergency reporting, alert management and relief coordination.
 ---
 
 ## 📌 1. Project Overview
@@ -74,28 +68,25 @@ The main objective is to improve communication, emergency awareness and coordina
 | Browser Notifications | Support browser-based alerts and notifications   |
 | Dashboard             | Role-specific information and activities         |
 
-## 📸 5. Application Screenshots
+## 📸 Application Screenshots
 
 ### Login Page
-
-
+![Login Page](./screenshots/login.png)
 
 ### Administrator Dashboard
+![Admin Dashboard 1](./screenshots/admin1.png)
 
-
-
-
+![Admin Dashboard 2](./screenshots/admin2.png)
 
 ### Citizen Dashboard
+![Citizen Dashboard 1](./screenshots/citizen1.png)
 
+![Citizen Dashboard 2](./screenshots/citizen2.png)
 
-
-
-
-
+![Citizen Dashboard 3](./screenshots/citizen3.png)
 
 ### Volunteer Dashboard
-
+![Volunteer Dashboard](./screenshots/volunteer.png)
 
 
 ## 🛠️ 6. Technologies Used
