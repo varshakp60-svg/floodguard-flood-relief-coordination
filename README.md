@@ -1,75 +1,164 @@
-<p align="center">
-  <img src="screenshots/floodguard-banner.png" alt="FloodGuard - Flood Alert and Relief Coordination System" width="100%">
-</p>
-# FloodGuard – Flood Alert & Relief Coordination System
+&#x20;\<p align="center">
+&#x20; \<img src="screenshots/floodguard-banner.png" alt="FloodGuard Banner" width="100%">
+\</p>
 
-A MERN-stack web application designed to support flood emergency reporting, alert management, and coordination between administrators, citizens, and volunteers.
+\<h1 align="center">🌊 FloodGuard\</h1>
 
-## Overview
+\<h3 align="center">Flood Alert & Relief Coordination System\</h3>
 
-FloodGuard provides a shared platform where citizens can report flood-related incidents, administrators can review reports and manage alerts, and volunteers can receive and update assigned relief tasks.
+\<p align="center">   A web-based platform designed to support flood emergency reporting, alert management and coordination between administrators, citizens and volunteers. \</p>
 
-The project aims to demonstrate how web technologies can support communication and coordination during flood emergencies.
+\<p align="center">   \<img src="[https://img.shields.io/badge/Frontend-React-blue?logo=react](https://img.shields.io/badge/Frontend-React-blue?logo=react)" alt="React">   \<img src="[https://img.shields.io/badge/Backend-Node.js-green?logo=node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)" alt="Node.js">   \<img src="[https://img.shields.io/badge/Framework-Express-black?logo=express](https://img.shields.io/badge/Framework-Express-black?logo=express)" alt="Express">   \<img src="[https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)" alt="MongoDB">   \<img src="[https://img.shields.io/badge/Maps-Leaflet-brightgreen](https://img.shields.io/badge/Maps-Leaflet-brightgreen)" alt="Leaflet">   \<img src="[https://img.shields.io/badge/Status-Academic%20Project-orange](https://img.shields.io/badge/Status-Academic%20Project-orange)" alt="Project status"> \</p>
 
-## Key Features
+---
 
-- **Role-based access:** Separate experiences for administrators, citizens, and volunteers.
-- **Citizen reporting:** Submit flood-related reports with image uploads.
-- **Alert management:** Administrators can create and update flood alerts.
-- **Volunteer coordination:** Administrators can manage volunteer tasks and track their status.
-- **Relief-centre management:** Manage relief-centre information.
-- **Interactive map:** Display locations using Leaflet and OpenStreetMap.
-- **Notifications:** Browser notifications and an alert sound when supported and permitted by the browser.
-- **Authentication:** Password hashing and JWT-based authentication.
+## 📌 1. Project Overview
 
-## User Roles
+FloodGuard is a MERN-stack web application developed to improve flood emergency communication and relief coordination.
 
-| Role | Responsibilities |
-|---|---|
-| Administrator | Review reports, manage alerts, coordinate volunteers and relief centres, and manage tasks |
-| Citizen | Submit flood reports and view relevant alerts |
-| Volunteer | View assigned tasks and update task status with completion evidence |
+During floods, people may face difficulties reporting emergencies, receiving important updates and connecting with relief volunteers.
 
-## Technology Stack
+FloodGuard provides a centralized platform where:
 
-| Area | Technologies |
-|---|---|
-| Frontend | React, Vite, React Router |
-| Backend | Node.js, Express |
-| Database | MongoDB, Mongoose |
-| Authentication | JSON Web Tokens (JWT), bcryptjs |
-| Image uploads | Multer |
-| Maps | Leaflet, React Leaflet, OpenStreetMap |
-| Icons | Lucide React |
-| Notifications | Browser Notification API, Service Worker |
+- Citizens can report flood-related emergencies.
+- Administrators can review reports and publish flood alerts.
+- Volunteers can view assigned relief tasks and submit completion proof.
+- Users can access map-based location information.
 
-## Application Architecture
+The main objective is to improve communication, emergency awareness and coordination during flood situations.
 
-```text
-                 FLOODGUARD
-                     |
-          +----------+----------+
-          |                     |
-       Frontend              Backend
-       React + Vite          Node + Express
-          |                     |
-          |                REST API
-          |                     |
-          +---------------------+
-                                |
-                            MongoDB
+## 🎯 2. Objectives
+
+- Provide a centralized flood emergency reporting platform.
+- Enable administrators to manage emergency alerts.
+- Support coordination between citizens and volunteers.
+- Provide map-based visualization of relevant locations.
+- Improve the organization of relief activities.
+- Build a foundation for future intelligent disaster-management features.
+
+## 👥 3. User Roles and Responsibilities
+
+### 🛡️ Administrator
+
+- Manage the flood alert system.
+- View and review citizen emergency reports.
+- Create and manage flood alerts.
+- Coordinate volunteer activities.
+- Manage relief-related information.
+
+### 👤 Citizen
+
+- Access the citizen dashboard.
+- Submit flood emergency reports.
+- Upload supporting images.
+- View relevant flood alerts and report information.
+
+### 🤝 Volunteer
+
+- Access assigned relief tasks.
+- View task-related information.
+- Perform assigned relief activities.
+- Upload images as proof of task completion.
+
+## ✨ 4. Key Features
+
+| Feature               | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| Role-based Login      | Separate access for Admin, Citizen and Volunteer |
+| Emergency Reporting   | Citizens can submit flood-related reports        |
+| Image Upload          | Upload images with emergency reports             |
+| Flood Alerts          | Administrators can publish important alerts      |
+| Volunteer Management  | Coordinate relief tasks and activities           |
+| Task Completion Proof | Volunteers can upload completion images          |
+| Interactive Map       | Display relevant locations using Leaflet         |
+| Browser Notifications | Support browser-based alerts and notifications   |
+| Dashboard             | Role-specific information and activities         |
+
+## 📸 5. Application Screenshots
+
+### Login Page
+
+
+
+### Administrator Dashboard
+
+
+
+
+
+### Citizen Dashboard
+
+
+
+
+
+
+
+### Volunteer Dashboard
+
+
+
+## 🛠️ 6. Technologies Used
+
+### Frontend
+
+- React.js – Building interactive user interfaces.
+- Vite – Frontend development and build tool.
+- React Router – Navigation between application pages.
+- CSS – Styling and responsive layouts.
+- Axios – API communication.
+- Leaflet and React Leaflet – Interactive maps.
+- Lucide React – Icons.
+
+### Backend
+
+- Node.js – JavaScript runtime.
+- Express.js – Backend API framework.
+- MongoDB – Database.
+- Mongoose – MongoDB object modeling.
+- JWT – Authentication.
+- bcryptjs – Password hashing.
+- Multer – Image upload handling.
+
+### Other Technologies
+
+- Git and GitHub – Version control and project hosting.
+- OpenStreetMap – Map data.
+- Browser Notification API and Service Workers – Browser notifications.
+
+## 🏗️ 7. System Architecture
+
+FloodGuard follows a client-server architecture.
+
+```mermaid
+flowchart TD
+    A[User] --> B{Login}
+    B --> C[React Frontend]
+    C --> D[Node.js and Express API]
+    D --> E[JWT Authentication]
+    D --> F[MongoDB Database]
+    D --> G[Image Uploads]
+    C --> H[Leaflet Map]
+    C --> I[Browser Notifications]
+    F --> D
+    D --> C
+    C --> J[Admin Dashboard]
+    C --> K[Citizen Dashboard]
+    C --> L[Volunteer Dashboard]
 ```
 
-## Project Workflow
+## 🔄 8. Project Workflow
 
-1. A user signs in with the appropriate role.
-2. Citizens submit flood-related reports.
-3. Administrators review reports and publish alerts.
-4. Administrators coordinate volunteers and relief tasks.
-5. Volunteers view assigned tasks and update their progress.
-6. Users can access relevant information through their role-based dashboards.
+1. The user opens the FloodGuard application.
+2. The user logs in through the authentication system.
+3. The application provides access based on the user's role.
+4. Citizens submit emergency reports with relevant information and images.
+5. Administrators review reports and create flood alerts.
+6. Volunteers access their assigned relief tasks.
+7. Volunteers carry out tasks and upload completion proof.
+8. Relevant information is managed through the backend and database.
 
-## Project Structure
+## 📂 9. Project Structure
 
 ```text
 FloodGuard/
@@ -92,60 +181,73 @@ FloodGuard/
 │   ├── package.json
 │   └── package-lock.json
 │
+├── screenshots/
+│   ├── floodguard-banner.png
+│   ├── login.png
+│   ├── admin1.png
+│   ├── admin2.png
+│   ├── citizen1.png
+│   ├── citizen2.png
+│   ├── citizen3.png
+│   └── volunteer.png
+│
 ├── .gitignore
 └── README.md
 ```
 
-## Prerequisites
+## ⚙️ 10. Installation and Setup
 
-Install the following before running the application:
+### Prerequisites
+
+Install the following:
 
 - Node.js and npm
-- MongoDB local installation or MongoDB Atlas account
+- MongoDB
 - Git
+- Visual Studio Code (recommended)
 
-## Installation and Setup
-
-### 1. Clone the repository
+### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/floodguard-flood-relief-coordination.git
+git clone https://github.com/varshakp60-svg/floodguard-flood-relief-coordination.git
+```
+
+### Step 2: Open the project
+
+```bash
 cd floodguard-flood-relief-coordination
 ```
 
-### 2. Configure the backend
+### Step 3: Configure the backend
 
 ```bash
 cd server
 npm install
 ```
 
-Create your local `.env` file using `.env.example` as a reference.
+Create a `.env` file inside the server folder using `.env.example` as a reference.
 
-Configure the required values:
+Configure:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb://127.0.0.1:27017/floodguard
 JWT_SECRET=your_long_random_secret
+
 ADMIN_NAME=FloodGuard Admin
-ADMIN_EMAIL=your_admin_email
-ADMIN_PASSWORD=your_strong_admin_password
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=your_strong_password
 ```
 
-Create the administrator account if one does not already exist:
+Use your own secure credentials and secret values.
 
-```bash
-node createAdmin.js
-```
-
-Start the backend:
+### Step 4: Start the backend
 
 ```bash
 node server.js
 ```
 
-### 3. Configure the frontend
+### Step 5: Configure the frontend
 
 Open another terminal:
 
@@ -154,13 +256,13 @@ cd client
 npm install
 ```
 
-Create a local `.env` file using the frontend `.env.example`:
+Create a `.env` file in the client folder:
 
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
-Start the frontend:
+### Step 6: Start the frontend
 
 ```bash
 npm run dev
@@ -168,31 +270,59 @@ npm run dev
 
 Open the local URL displayed by Vite in your browser.
 
-## Environment Variables
+**Note:** Ensure MongoDB is running and the backend environment variables are configured correctly. Create an administrator account using the project's admin setup script if one has not already been created. Do not run the account creation script repeatedly without checking for an existing administrator.
 
-Never commit your actual `.env` files or private credentials.
+## 🔐 11. Environment and Security
 
-The repository includes `.env.example` files as configuration templates. Replace the example values with your own local settings.
+- Environment files containing credentials are excluded from Git.
+- Example environment files are provided for configuration.
+- Passwords are hashed using bcryptjs.
+- JWT is used for authentication.
+- Uploaded images are excluded from the repository.
+- Production deployment requires additional authorization and security configuration.
 
-## Current Project Scope
+## 📍 12. Current Project Scope and Limitations
 
-FloodGuard is an academic project prototype demonstrating flood reporting and relief coordination workflows.
+FloodGuard is an academic prototype demonstrating flood emergency reporting and relief coordination.
 
-It does not currently provide independently verified flood prediction, official government warning integration, or guaranteed emergency response. Browser notifications also depend on browser permissions and platform support.
+Current limitations include:
 
-## Future Enhancements
+- It does not independently predict future floods using an AI model.
+- It does not directly integrate with official government flood-warning systems.
+- Browser notifications depend on browser support and user permissions.
+- It requires further security, scalability and reliability improvements before real-world deployment.
 
-- Integration with official weather and disaster-management data sources.
-- AI-assisted flood risk analysis using reliable data.
-- Real-time alert delivery.
-- Improved report privacy and role-based API authorization.
-- Secure cloud-based image storage.
-- Deployment with production-grade security and monitoring.
+## 🚀 13. Future Enhancements
 
-## Project Objective
+The following features can be considered for future development:
 
-To develop a role-based web application that demonstrates how citizens, administrators, and volunteers can coordinate flood-related reporting and relief activities through a common platform.
+1. AI-based flood risk prediction using weather and historical flood data.
+2. Integration with trusted government weather and disaster-warning APIs.
+3. Real-time flood monitoring and alert generation.
+4. SMS and mobile push notifications.
+5. Advanced GIS-based flood-risk visualization.
+6. Live volunteer location tracking.
+7. Improved emergency resource and relief-centre management.
+8. Stronger authentication, authorization and data protection.
+
+## 🎓 14. Project Objective
+
+FloodGuard aims to demonstrate how web technologies can support disaster response through centralized emergency reporting, alert management and volunteer coordination.
+
+The project provides a foundation for developing more advanced and intelligent disaster-management solutions.
+
+## 👩‍💻 15. Developed As
+
+**Project Name:** FloodGuard – Flood Alert & Relief Coordination System
+
+**Project Type:** Academic Mini Project
+
+**Architecture:** MERN Stack
+
+**Repository:** [GitHub – FloodGuard](https://github.com/varshakp60-svg/floodguard-flood-relief-coordination)
 
 ---
 
-**FloodGuard – Connecting people, alerts, and relief coordination.**
+\<p align="center">
+&#x20; \<b>🌊 FloodGuard – Prepared Today, Safer Tomorrow.\</b>
+\</p>
