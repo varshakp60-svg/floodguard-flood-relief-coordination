@@ -192,4 +192,27 @@ To develop a role-based web application that demonstrates how citizens, administ
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. Login Page
+![FloodGuard Login](screenshots/login.png)
+
+### 2. Admin Dashboard
+![Admin Dashboard - Overview](screenshots/admin1.png)
+
+### 3. Admin Dashboard - Additional View
+![Admin Dashboard - Details](screenshots/admin2.png)
+
+### 4. Citizen Dashboard
+![Citizen Dashboard - Overview](screenshots/citizen1.png)
+
+### 5. Citizen Dashboard - Additional View
+![Citizen Dashboard - Details](screenshots/citizen2.png)
+
+### 6. Citizen Dashboard - Reports
+![Citizen Dashboard - Reports](screenshots/citizen3.png)
+
+### 7. Volunteer Dashboard
+![Volunteer Dashboard](screenshots/volunteer.png)
+
 **FloodGuard – Connecting people, alerts, and relief coordination.**
